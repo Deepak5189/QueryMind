@@ -11,13 +11,13 @@ COLUMNS:
   - is_active (boolean) [NOT NULL]
 
 FOREIGN KEYS (this table -> other tables):
-  - cards.user_id -> users.user_id
   - cards.bank_id -> banks.bank_id
+  - cards.user_id -> users.user_id
 
 REFERENCED BY (other tables -> this table):
   - transactions.card_id -> cards.card_id
 
 SAMPLE ROWS (3):
-  - card_id=1114, user_id=903, bank_id=8, card_type=CREDIT, card_network=VISA, issued_date=2026-05-10, is_active=True
-  - card_id=15, user_id=13, bank_id=10, card_type=CREDIT, card_network=AMEX, issued_date=2024-11-26, is_active=True
-  - card_id=972, user_id=787, bank_id=4, card_type=DEBIT, card_network=VISA, issued_date=2025-10-21, is_active=True
+  - card_id=138, user_id=125, bank_id=8, card_type=CREDIT, card_network=VISA, issued_date=2025-03-19, is_active=True
+  - card_id=641, user_id=536, bank_id=10, card_type=DEBIT, card_network=VISA, issued_date=2025-07-21, is_active=True
+  - card_id=1743, user_id=1465, bank_id=10, card_type=DEBIT, card_network=VISA, issued_date=2026-03-11, is_active=True

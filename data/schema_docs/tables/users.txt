@@ -19,6 +19,6 @@ REFERENCED BY (other tables -> this table):
   - transactions.user_id -> users.user_id
 
 SAMPLE ROWS (3):
-  - user_id=1877, full_name=Sanaya Sharma, email=sanaya1877@example.com, phone=4336080901, state_code=MH, signup_date=2025-11-17, user_segment=Retail, is_active=True
-  - user_id=763, full_name=Gaurika Nayar, email=gaurika763@example.com, phone=2542782079, state_code=KA, signup_date=2024-09-01, user_segment=Premium, is_active=True
-  - user_id=1091, full_name=Jai Singh, email=jai1091@example.com, phone=1733739920, state_code=DL, signup_date=2025-01-21, user_segment=Retail, is_active=True
+  - user_id=1411, full_name=Yatan Hans, email=yatan1411@example.com, phone=4362962080, state_code=WB, signup_date=2026-06-19, user_segment=Retail, is_active=True
+  - user_id=1092, full_name=Tanish Sabharwal, email=tanish1092@example.com, phone=1659143882, state_code=KA, signup_date=2025-01-05, user_segment=Retail, is_active=True
+  - user_id=1226, full_name=Yatin Padmanabhan, email=yatin1226@example.com, phone=5953322273, state_code=TN, signup_date=2026-05-25, user_segment=Retail, is_active=True

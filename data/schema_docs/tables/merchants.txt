@@ -12,13 +12,13 @@ COLUMNS:
 
 FOREIGN KEYS (this table -> other tables):
   - merchants.category_id -> merchant_categories.category_id
-  - merchants.state_code -> states.state_code
   - merchants.settlement_bank_id -> banks.bank_id
+  - merchants.state_code -> states.state_code
 
 REFERENCED BY (other tables -> this table):
   - transactions.merchant_id -> merchants.merchant_id
 
 SAMPLE ROWS (3):
-  - merchant_id=252, merchant_name=Panchal-Doctor, category_id=8, state_code=PB, settlement_bank_id=5, onboarded_date=2025-08-07, is_active=True
-  - merchant_id=213, merchant_name=Sinha-Loke, category_id=12, state_code=TN, settlement_bank_id=1, onboarded_date=2025-04-09, is_active=True
-  - merchant_id=22, merchant_name=Bansal, Bhalla and Kumar, category_id=7, state_code=AS, settlement_bank_id=8, onboarded_date=2025-10-26, is_active=True
+  - merchant_id=53, merchant_name=Dalal, Khurana and Thaman, category_id=4, state_code=MH, settlement_bank_id=3, onboarded_date=2025-11-09, is_active=True
+  - merchant_id=59, merchant_name=Jhaveri Group, category_id=12, state_code=BR, settlement_bank_id=8, onboarded_date=2025-09-07, is_active=True
+  - merchant_id=185, merchant_name=Sathe Group, category_id=10, state_code=DL, settlement_bank_id=5, onboarded_date=2025-11-21, is_active=True

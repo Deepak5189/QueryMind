@@ -10,6 +10,6 @@ REFERENCED BY (other tables -> this table):
   - merchants.category_id -> merchant_categories.category_id
 
 SAMPLE ROWS (3):
-  - category_id=7, category_name=Apparel & Fashion, category_group=Discretionary
-  - category_id=10, category_name=Fuel, category_group=Essential
-  - category_id=5, category_name=Utilities, category_group=Essential
+  - category_id=12, category_name=Financial Services, category_group=Essential
+  - category_id=2, category_name=Electronics, category_group=Discretionary
+  - category_id=4, category_name=Travel & Transit, category_group=Discretionary

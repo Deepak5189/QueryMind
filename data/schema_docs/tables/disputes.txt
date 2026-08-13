@@ -13,6 +13,6 @@ FOREIGN KEYS (this table -> other tables):
   - disputes.transaction_id -> transactions.transaction_id
 
 SAMPLE ROWS (3):
-  - dispute_id=256, transaction_id=9561, reason=Incorrect Amount, status=OPEN, opened_date=2025-09-06, resolved_date=None
-  - dispute_id=547, transaction_id=40407, reason=Fraud - Unauthorized, status=RESOLVED, opened_date=2026-08-10, resolved_date=None
-  - dispute_id=521, transaction_id=45650, reason=Duplicate Charge, status=RESOLVED, opened_date=2026-08-10, resolved_date=None
+  - dispute_id=680, transaction_id=42293, reason=Fraud - Unauthorized, status=RESOLVED, opened_date=2025-01-03, resolved_date=2025-01-04
+  - dispute_id=192, transaction_id=42882, reason=Merchant Error, status=OPEN, opened_date=2025-01-16, resolved_date=None
+  - dispute_id=91, transaction_id=19252, reason=Merchant Error, status=RESOLVED, opened_date=2026-06-25, resolved_date=2026-07-07

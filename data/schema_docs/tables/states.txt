@@ -12,6 +12,6 @@ REFERENCED BY (other tables -> this table):
   - users.state_code -> states.state_code
 
 SAMPLE ROWS (3):
-  - state_code=AS, state_name=Assam, region=Northeast
-  - state_code=TN, state_name=Tamil Nadu, region=South
-  - state_code=DL, state_name=Delhi, region=North
+  - state_code=RJ, state_name=Rajasthan, region=North
+  - state_code=KA, state_name=Karnataka, region=South
+  - state_code=TG, state_name=Telangana, region=South

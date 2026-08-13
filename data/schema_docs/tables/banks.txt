@@ -12,6 +12,6 @@ REFERENCED BY (other tables -> this table):
   - merchants.settlement_bank_id -> banks.bank_id
 
 SAMPLE ROWS (3):
+  - bank_id=2, bank_name=HDFC Bank, bank_code=HDFC, bank_type=Private
   - bank_id=7, bank_name=Bank of Baroda, bank_code=BARB, bank_type=Public
-  - bank_id=6, bank_name=Kotak Mahindra Bank, bank_code=KKBK, bank_type=Private
-  - bank_id=3, bank_name=ICICI Bank, bank_code=ICIC, bank_type=Private
+  - bank_id=5, bank_name=Punjab National Bank, bank_code=PUNB, bank_type=Public
