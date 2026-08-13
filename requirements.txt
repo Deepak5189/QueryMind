@@ -18,8 +18,8 @@ openai>=1.47.1
 langsmith>=0.10.17           # tracing client; safe no-op without LANGCHAIN_API_KEY
 
 # ---- Phase 3+ (API, frontend) — installed later, listed for reference ----
-fastapi==0.115.0
-uvicorn[standard]==0.30.6
+# fastapi==0.115.0
+# uvicorn[standard]==0.30.6
 
 # ---- Phase 5 (evaluation) — installed later ----
-ragas==0.1.20
+# ragas==0.1.20
