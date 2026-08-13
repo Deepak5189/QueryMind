@@ -1,0 +1,24 @@
+TABLE: users
+ROW COUNT (at seed time): 2,000
+
+COLUMNS:
+  - user_id (integer) [PRIMARY KEY, NOT NULL]
+  - full_name (character varying) [NOT NULL]
+  - email (character varying) [NOT NULL]
+  - phone (character varying) [NOT NULL]
+  - state_code (character) [NOT NULL]
+  - signup_date (date) [NOT NULL]
+  - user_segment (character varying) [NOT NULL]
+  - is_active (boolean) [NOT NULL]
+
+FOREIGN KEYS (this table -> other tables):
+  - users.state_code -> states.state_code
+
+REFERENCED BY (other tables -> this table):
+  - cards.user_id -> users.user_id
+  - transactions.user_id -> users.user_id
+
+SAMPLE ROWS (3):
+  - user_id=1877, full_name=Sanaya Sharma, email=sanaya1877@example.com, phone=4336080901, state_code=MH, signup_date=2025-11-17, user_segment=Retail, is_active=True
+  - user_id=763, full_name=Gaurika Nayar, email=gaurika763@example.com, phone=2542782079, state_code=KA, signup_date=2024-09-01, user_segment=Premium, is_active=True
+  - user_id=1091, full_name=Jai Singh, email=jai1091@example.com, phone=1733739920, state_code=DL, signup_date=2025-01-21, user_segment=Retail, is_active=True

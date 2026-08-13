@@ -1,0 +1,15 @@
+TABLE: merchant_categories
+ROW COUNT (at seed time): 12
+
+COLUMNS:
+  - category_id (integer) [PRIMARY KEY, NOT NULL]
+  - category_name (character varying) [NOT NULL]
+  - category_group (character varying) [NOT NULL]
+
+REFERENCED BY (other tables -> this table):
+  - merchants.category_id -> merchant_categories.category_id
+
+SAMPLE ROWS (3):
+  - category_id=7, category_name=Apparel & Fashion, category_group=Discretionary
+  - category_id=10, category_name=Fuel, category_group=Essential
+  - category_id=5, category_name=Utilities, category_group=Essential

@@ -1,0 +1,18 @@
+TABLE: disputes
+ROW COUNT (at seed time): 920
+
+COLUMNS:
+  - dispute_id (integer) [PRIMARY KEY, NOT NULL]
+  - transaction_id (bigint) [NOT NULL]
+  - reason (character varying) [NOT NULL]
+  - status (character varying) [NOT NULL]
+  - opened_date (date) [NOT NULL]
+  - resolved_date (date) [NULL]
+
+FOREIGN KEYS (this table -> other tables):
+  - disputes.transaction_id -> transactions.transaction_id
+
+SAMPLE ROWS (3):
+  - dispute_id=256, transaction_id=9561, reason=Incorrect Amount, status=OPEN, opened_date=2025-09-06, resolved_date=None
+  - dispute_id=547, transaction_id=40407, reason=Fraud - Unauthorized, status=RESOLVED, opened_date=2026-08-10, resolved_date=None
+  - dispute_id=521, transaction_id=45650, reason=Duplicate Charge, status=RESOLVED, opened_date=2026-08-10, resolved_date=None

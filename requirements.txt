@@ -1,0 +1,25 @@
+# ---- Phase 1: data seeding + schema introspection + pgvector ingestion ----
+psycopg2-binary==2.9.9
+sqlalchemy==2.0.35
+python-dotenv==1.0.1
+faker==28.4.1
+numpy==1.26.4
+scipy==1.14.1
+scikit-learn==1.5.2              # lightweight local embedding fallback (no API key, no GB-scale model download)
+pgvector==0.3.5
+tabulate==0.9.0                   # pretty-print retrieval test results
+
+# ---- Phase 2: agent graph, SQL guardrail, LLM providers ----
+langgraph==0.2.28
+langchain-core==0.3.86       # AgentState / message plumbing only; no langchain "chains" used
+sqlglot==25.20.2
+anthropic>=0.34.2
+openai>=1.47.1
+langsmith>=0.10.17           # tracing client; safe no-op without LANGCHAIN_API_KEY
+
+# ---- Phase 3+ (API, frontend) — installed later, listed for reference ----
+# fastapi==0.115.0
+# uvicorn[standard]==0.30.6
+
+# ---- Phase 5 (evaluation) — installed later ----
+# ragas==0.1.20

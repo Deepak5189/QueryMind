@@ -1,0 +1,22 @@
+# Deliberately conservative: correctness rules only (pyflakes + a handful
+# of pycodestyle checks), not style/modernization rules. This repo spans
+# five phases of incrementally-added code; the goal of CI linting is to
+# catch real bugs (unused imports, undefined names, bare excepts) on new
+# changes, not to force a stylistic rewrite of working, already-verified
+# code from earlier phases.
+line-length = 110
+target-version = "py311"
+
+[lint]
+select = ["E", "F", "W"]
+ignore = [
+    "E501",  # line length -- several files use long, deliberately-explanatory
+             # comments (see PROGRESS.md's own documentation style); not worth
+             # gating CI on.
+]
+
+[lint.per-file-ignores]
+# Test file re-exports validate_sql after manipulating sys.path -- the
+# import must come after the path insert, which is exactly what E402
+# normally (correctly) flags. Explicit and intentional here.
+"tests/*.py" = ["E402"]

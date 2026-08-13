@@ -1,0 +1,24 @@
+TABLE: merchants
+ROW COUNT (at seed time): 300
+
+COLUMNS:
+  - merchant_id (integer) [PRIMARY KEY, NOT NULL]
+  - merchant_name (character varying) [NOT NULL]
+  - category_id (integer) [NOT NULL]
+  - state_code (character) [NOT NULL]
+  - settlement_bank_id (integer) [NOT NULL]
+  - onboarded_date (date) [NOT NULL]
+  - is_active (boolean) [NOT NULL]
+
+FOREIGN KEYS (this table -> other tables):
+  - merchants.category_id -> merchant_categories.category_id
+  - merchants.state_code -> states.state_code
+  - merchants.settlement_bank_id -> banks.bank_id
+
+REFERENCED BY (other tables -> this table):
+  - transactions.merchant_id -> merchants.merchant_id
+
+SAMPLE ROWS (3):
+  - merchant_id=252, merchant_name=Panchal-Doctor, category_id=8, state_code=PB, settlement_bank_id=5, onboarded_date=2025-08-07, is_active=True
+  - merchant_id=213, merchant_name=Sinha-Loke, category_id=12, state_code=TN, settlement_bank_id=1, onboarded_date=2025-04-09, is_active=True
+  - merchant_id=22, merchant_name=Bansal, Bhalla and Kumar, category_id=7, state_code=AS, settlement_bank_id=8, onboarded_date=2025-10-26, is_active=True

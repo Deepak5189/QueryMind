@@ -1,0 +1,52 @@
+[
+  {
+    "term": "Transaction Volume",
+    "definition": "The total number of transactions (not their dollar/rupee amount) recorded in a given period. Contrast with 'Transaction Value' or 'GMV', which refers to the summed amount. When a user says 'volume' without qualification, prefer COUNT(*) over SUM(amount) unless they specifically say 'value' or 'worth'.",
+    "related_tables": ["transactions"]
+  },
+  {
+    "term": "GMV (Gross Merchandise Value)",
+    "definition": "The total monetary value of transactions over a period, typically restricted to SUCCESS status. Computed as SUM(amount) FROM transactions WHERE status = 'SUCCESS'. Failed and pending transactions should be excluded unless the user explicitly asks about them.",
+    "related_tables": ["transactions"]
+  },
+  {
+    "term": "Success Rate",
+    "definition": "The percentage of transactions with status = 'SUCCESS' out of all transactions in scope. Computed as COUNT(*) FILTER (WHERE status = 'SUCCESS') / COUNT(*)::float. A key reliability metric for payment rails (UPI vs CARD vs NEFT vs IMPS).",
+    "related_tables": ["transactions"]
+  },
+  {
+    "term": "Dispute Rate",
+    "definition": "The proportion of successful transactions that were later disputed. Computed as (COUNT of disputes) / (COUNT of SUCCESS transactions) over the same period. Disputes are linked to transactions via disputes.transaction_id.",
+    "related_tables": ["disputes", "transactions"]
+  },
+  {
+    "term": "Active User",
+    "definition": "A user with users.is_active = TRUE. Do not confuse with 'a user who transacted recently' — that requires checking transactions.transaction_ts, not the is_active flag, unless the question specifically asks about the account-status flag.",
+    "related_tables": ["users"]
+  },
+  {
+    "term": "Region",
+    "definition": "A grouping of states used for higher-level geographic analysis (North, South, East, West, Central, Northeast). Stored in states.region. Prefer joining transactions -> states on state_code when a question asks for 'by region' rather than 'by state'.",
+    "related_tables": ["states"]
+  },
+  {
+    "term": "Merchant Category / MCC",
+    "definition": "The business category a merchant operates in (e.g. Groceries, Electronics, Travel & Transit), grouped further into 'Essential' vs 'Discretionary' spend via category_group. Analogous to a real-world Merchant Category Code (MCC).",
+    "related_tables": ["merchant_categories", "merchants"]
+  },
+  {
+    "term": "Settlement Bank",
+    "definition": "The bank a merchant's transaction proceeds are settled to, distinct from the *issuing* bank on a customer's card. merchants.settlement_bank_id references banks.bank_id. Don't confuse with cards.bank_id, which is the card-issuing bank.",
+    "related_tables": ["merchants", "banks", "cards"]
+  },
+  {
+    "term": "Quarter / Last Quarter",
+    "definition": "A calendar quarter (Q1 = Jan-Mar, Q2 = Apr-Jun, Q3 = Jul-Sep, Q4 = Oct-Dec). 'Last quarter' means the calendar quarter prior to the current date, derived from transactions.transaction_ts, e.g. via date_trunc('quarter', transaction_ts).",
+    "related_tables": ["transactions"]
+  },
+  {
+    "term": "Payment Rail / Transaction Type",
+    "definition": "The channel a transaction moved through: UPI (real-time, dominant in India), CARD (credit/debit card), NEFT (batch bank transfer), or IMPS (real-time bank transfer). Stored in transactions.transaction_type.",
+    "related_tables": ["transactions"]
+  }
+]

@@ -1,0 +1,42 @@
+"""Shared Postgres connection helper used by all Phase 1 scripts."""
+
+import os
+
+import psycopg2
+from dotenv import load_dotenv
+
+load_dotenv()
+
+
+def get_connection():
+    dsn = os.environ.get("DATABASE_URL")
+    if not dsn:
+        raise RuntimeError(
+            "DATABASE_URL not set. Copy .env.example to .env (or export "
+            "DATABASE_URL) and try again."
+        )
+    return psycopg2.connect(dsn)
+
+
+def get_readonly_connection():
+    """
+    Connection used ONLY by the agent's execute_sql node (Phase 2).
+
+    Uses READONLY_DATABASE_URL, which points at the `querymind_readonly`
+    Postgres role (see data/seed/create_readonly_role.sql) -- a role with
+    SELECT-only grants on the 8 business tables and no grants at all on
+    schema_documents. The connection is also explicitly set to
+    READ ONLY at the transaction level as a second, independent check,
+    so this is defense-in-depth behind the sqlglot guardrail in
+    backend/app/agent/guardrails.py, not a substitute for it.
+    """
+    dsn = os.environ.get("READONLY_DATABASE_URL")
+    if not dsn:
+        raise RuntimeError(
+            "READONLY_DATABASE_URL not set. Run "
+            "`psql \"$DATABASE_URL\" -f data/seed/create_readonly_role.sql` "
+            "then copy READONLY_DATABASE_URL from .env.example into your .env."
+        )
+    conn = psycopg2.connect(dsn)
+    conn.set_session(readonly=True, autocommit=True)
+    return conn

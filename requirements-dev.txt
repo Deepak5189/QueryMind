@@ -1,0 +1,5 @@
+# Test-only dependencies. Kept separate from requirements.txt so the
+# production/container image (Dockerfile) doesn't install pytest.
+-r requirements.txt
+pytest==8.3.3
+ruff==0.6.9

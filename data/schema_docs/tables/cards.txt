@@ -1,0 +1,23 @@
+TABLE: cards
+ROW COUNT (at seed time): 2,371
+
+COLUMNS:
+  - card_id (integer) [PRIMARY KEY, NOT NULL]
+  - user_id (integer) [NOT NULL]
+  - bank_id (integer) [NOT NULL]
+  - card_type (character varying) [NOT NULL]
+  - card_network (character varying) [NOT NULL]
+  - issued_date (date) [NOT NULL]
+  - is_active (boolean) [NOT NULL]
+
+FOREIGN KEYS (this table -> other tables):
+  - cards.user_id -> users.user_id
+  - cards.bank_id -> banks.bank_id
+
+REFERENCED BY (other tables -> this table):
+  - transactions.card_id -> cards.card_id
+
+SAMPLE ROWS (3):
+  - card_id=1114, user_id=903, bank_id=8, card_type=CREDIT, card_network=VISA, issued_date=2026-05-10, is_active=True
+  - card_id=15, user_id=13, bank_id=10, card_type=CREDIT, card_network=AMEX, issued_date=2024-11-26, is_active=True
+  - card_id=972, user_id=787, bank_id=4, card_type=DEBIT, card_network=VISA, issued_date=2025-10-21, is_active=True

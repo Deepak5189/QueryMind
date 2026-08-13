@@ -1,0 +1,13 @@
+category_id,category_name,category_group
+1,Groceries,Essential
+2,Electronics,Discretionary
+3,Food Delivery,Discretionary
+4,Travel & Transit,Discretionary
+5,Utilities,Essential
+6,Healthcare & Pharmacy,Essential
+7,Apparel & Fashion,Discretionary
+8,Entertainment,Discretionary
+9,Education,Essential
+10,Fuel,Essential
+11,Home & Furniture,Discretionary
+12,Financial Services,Essential

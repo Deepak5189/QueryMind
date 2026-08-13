@@ -1,0 +1,301 @@
+merchant_id,merchant_name,category_id,state_code,settlement_bank_id,onboarded_date,is_active
+1,Basu and Sons,5,UP,4,2025-05-05T00:00:00,True
+2,Kannan Ltd,6,GJ,3,2025-02-26T00:00:00,False
+3,Zachariah PLC,5,TN,1,2026-07-04T00:00:00,True
+4,Chand-Ganesh,11,TN,6,2025-03-13T00:00:00,True
+5,Dutta Inc,4,HR,6,2026-06-17T00:00:00,True
+6,Sankaran Group,9,BR,2,2024-12-09T00:00:00,True
+7,"Sarin, Memon and Date",3,WB,4,2026-02-06T00:00:00,True
+8,Srivastava-Ramachandran,6,PB,10,2025-10-23T00:00:00,True
+9,Sane PLC,4,DL,10,2026-04-03T00:00:00,True
+10,"Nigam, Grewal and Sinha",9,KL,3,2025-07-11T00:00:00,True
+11,Wadhwa Group,11,RJ,3,2026-01-12T00:00:00,True
+12,"Radhakrishnan, Balakrishnan and Kohli",8,WB,2,2025-12-04T00:00:00,True
+13,Ahuja PLC,10,KA,3,2026-01-12T00:00:00,True
+14,Sen-Kara,11,HR,8,2026-01-23T00:00:00,True
+15,Sarma-Buch,6,HR,9,2026-07-22T00:00:00,True
+16,"Amble, Ray and Gopal",8,OD,5,2026-03-28T00:00:00,True
+17,"Yadav, Kari and Kapadia",10,DL,4,2025-03-22T00:00:00,True
+18,Palan-Pillay,8,GJ,7,2025-03-21T00:00:00,True
+19,Kibe-Oommen,7,UP,6,2025-04-27T00:00:00,True
+20,Ghose-Hans,3,KA,5,2025-11-08T00:00:00,True
+21,"Dayal, Sethi and Tata",4,DL,8,2026-01-16T00:00:00,True
+22,"Bansal, Bhalla and Kumar",7,AS,8,2025-10-26T00:00:00,True
+23,Kala-Nori,8,PB,5,2025-09-05T00:00:00,False
+24,"Parikh, Singhal and Kamdar",8,GJ,5,2026-06-01T00:00:00,True
+25,Dass Group,2,KL,9,2026-01-17T00:00:00,True
+26,Date and Sons,2,RJ,4,2024-11-18T00:00:00,True
+27,"Padmanabhan, Sem and Bajaj",6,DL,9,2025-03-03T00:00:00,True
+28,Gade-Kumar,11,PB,5,2025-06-15T00:00:00,True
+29,Dua LLC,11,RJ,4,2026-08-02T00:00:00,True
+30,Nazareth-Mannan,3,RJ,1,2025-06-12T00:00:00,True
+31,Verma-Kapoor,6,MP,7,2026-03-26T00:00:00,True
+32,"Sengupta, Shanker and Barad",1,OD,9,2025-01-09T00:00:00,True
+33,Chawla-Chawla,4,GJ,4,2025-12-08T00:00:00,True
+34,Sood-Yogi,10,AS,8,2025-07-24T00:00:00,True
+35,Parsa PLC,6,WB,7,2026-07-25T00:00:00,True
+36,Mangal-Ratta,8,AS,9,2024-09-09T00:00:00,True
+37,"Sharma, Kaul and Wable",10,TG,5,2024-08-19T00:00:00,True
+38,Oza-Rai,11,HR,6,2025-03-28T00:00:00,True
+39,"Anne, Mishra and Mallick",11,MP,9,2025-06-12T00:00:00,True
+40,"Lalla, Sankar and Tata",1,DL,3,2025-01-14T00:00:00,True
+41,"Kari, Johal and Grover",6,MP,7,2025-03-07T00:00:00,True
+42,"Gokhale, Bobal and Gaba",2,MP,4,2025-12-09T00:00:00,True
+43,Narayanan-Pandey,10,AS,5,2024-11-13T00:00:00,True
+44,"Shroff, Sarma and Balakrishnan",11,UP,1,2026-07-16T00:00:00,True
+45,Sampath and Sons,1,UP,4,2024-10-20T00:00:00,True
+46,Lala LLC,7,KL,4,2025-04-05T00:00:00,True
+47,"Mallick, Dutta and Sama",9,KA,8,2024-10-07T00:00:00,True
+48,Balay-Sura,1,UP,6,2025-10-04T00:00:00,True
+49,Bajwa-Naidu,2,TG,9,2025-10-12T00:00:00,True
+50,Bhargava Inc,2,MP,4,2024-12-21T00:00:00,True
+51,Batta and Sons,5,BR,8,2025-01-19T00:00:00,True
+52,Vaidya Inc,5,WB,9,2026-07-12T00:00:00,True
+53,"Dalal, Khurana and Thaman",4,MH,3,2025-11-09T00:00:00,True
+54,Chand-Prashad,7,GJ,9,2025-07-12T00:00:00,True
+55,Kapur and Sons,8,AS,8,2026-03-22T00:00:00,True
+56,Samra-Bera,2,KL,8,2025-07-31T00:00:00,True
+57,Borra-Barad,12,KL,7,2026-04-29T00:00:00,True
+58,"Badal, Dada and Pau",3,BR,4,2025-02-09T00:00:00,True
+59,Jhaveri Group,12,BR,8,2025-09-07T00:00:00,True
+60,Hora-Nanda,3,TN,7,2026-07-26T00:00:00,True
+61,Shanker-Bail,4,UP,5,2026-05-15T00:00:00,True
+62,Sengupta Group,11,KA,4,2025-12-28T00:00:00,True
+63,Vaidya Group,9,TN,6,2024-10-27T00:00:00,True
+64,Nagar Group,9,PB,7,2025-11-14T00:00:00,True
+65,Sankar-Pillai,4,DL,8,2024-09-06T00:00:00,True
+66,Merchant-Pandit,12,AS,7,2025-07-27T00:00:00,True
+67,Oak-Oza,4,MP,1,2024-08-20T00:00:00,True
+68,"Prabhakar, Pillai and Bal",12,TG,6,2026-06-27T00:00:00,True
+69,Naik-Khatri,8,AS,2,2024-11-02T00:00:00,True
+70,"Ram, Desai and Butala",4,AS,3,2025-12-05T00:00:00,True
+71,Contractor-Mital,3,UP,1,2026-04-23T00:00:00,True
+72,"Patla, Mangat and Borde",5,TN,9,2025-09-14T00:00:00,True
+73,"Kapur, Pai and Dyal",11,MH,5,2025-01-14T00:00:00,True
+74,"Munshi, Deep and Peri",3,WB,1,2026-07-02T00:00:00,True
+75,Bhatia Group,8,DL,9,2026-05-28T00:00:00,True
+76,"Wagle, Tella and Gade",11,TN,7,2026-07-17T00:00:00,True
+77,Ramesh Ltd,1,MH,1,2025-08-31T00:00:00,True
+78,Char-Bhavsar,4,HR,4,2025-03-02T00:00:00,True
+79,"Goyal, Chanda and Mistry",7,MH,1,2025-07-21T00:00:00,True
+80,Swamy-Merchant,11,KA,4,2024-11-16T00:00:00,True
+81,"Merchant, Nagarajan and Dixit",11,UP,3,2024-09-24T00:00:00,True
+82,Jayaraman Inc,2,PB,6,2026-03-08T00:00:00,True
+83,"Deshmukh, Solanki and Rajan",10,WB,9,2025-09-18T00:00:00,True
+84,"Lala, Sheth and Jain",2,GJ,4,2024-11-26T00:00:00,True
+85,Varghese Ltd,3,MH,7,2026-06-10T00:00:00,True
+86,"Dhaliwal, Mital and Bhandari",7,WB,8,2025-03-23T00:00:00,True
+87,Patil Ltd,5,HR,1,2024-10-17T00:00:00,True
+88,Gera Ltd,7,KL,10,2026-01-03T00:00:00,True
+89,Ganguly Ltd,2,UP,5,2024-11-15T00:00:00,True
+90,Mangal-Andra,11,MP,3,2025-07-16T00:00:00,True
+91,"Ghose, Iyer and Sarin",12,PB,8,2024-10-18T00:00:00,True
+92,Mann Ltd,10,AS,7,2026-01-15T00:00:00,True
+93,Krishna Inc,4,MH,4,2024-08-31T00:00:00,True
+94,Chakrabarti PLC,2,KL,4,2025-10-22T00:00:00,True
+95,Pathak Ltd,10,KA,1,2024-12-28T00:00:00,True
+96,"Gala, Pandya and Sridhar",5,WB,3,2025-08-29T00:00:00,True
+97,"Nadig, Bhat and Bala",1,GJ,10,2025-11-07T00:00:00,True
+98,Sridhar-Krishnan,6,TG,5,2025-07-01T00:00:00,True
+99,Deshpande Ltd,1,BR,5,2024-09-03T00:00:00,True
+100,Dube LLC,12,PB,6,2025-04-15T00:00:00,True
+101,Ray-Anand,1,GJ,4,2026-04-24T00:00:00,True
+102,Chahal Inc,9,PB,3,2025-11-05T00:00:00,True
+103,Mittal Ltd,2,OD,2,2025-02-23T00:00:00,True
+104,"Kaul, Lala and Thakkar",3,WB,3,2024-11-11T00:00:00,True
+105,"Peri, Solanki and Biswas",9,WB,4,2026-01-11T00:00:00,True
+106,Kala PLC,12,AS,5,2025-01-25T00:00:00,True
+107,"Sankaran, Goda and Shenoy",4,BR,3,2026-04-22T00:00:00,True
+108,Sagar-Chahal,5,AS,4,2025-05-15T00:00:00,True
+109,Tak and Sons,8,KA,6,2025-09-21T00:00:00,True
+110,Dave-D’Alia,8,AS,7,2026-01-09T00:00:00,True
+111,Dora Inc,7,TG,8,2024-08-30T00:00:00,True
+112,Chadha Ltd,7,KA,5,2026-04-11T00:00:00,True
+113,"Jani, Thakkar and Chacko",9,UP,5,2025-09-03T00:00:00,True
+114,Baral Inc,8,KL,7,2026-03-08T00:00:00,True
+115,Mody-Banerjee,2,PB,3,2025-12-03T00:00:00,True
+116,Vora PLC,4,MH,1,2026-01-04T00:00:00,True
+117,Wable Ltd,6,OD,7,2025-10-09T00:00:00,True
+118,Raghavan Ltd,12,HR,7,2025-12-24T00:00:00,True
+119,Mittal-Patel,10,KA,7,2024-09-18T00:00:00,True
+120,Guha Inc,2,MP,10,2025-01-23T00:00:00,True
+121,"Chokshi, Banik and Varghese",7,RJ,6,2026-01-13T00:00:00,True
+122,Boase Ltd,11,HR,1,2026-06-07T00:00:00,True
+123,Handa LLC,7,GJ,4,2025-12-12T00:00:00,True
+124,Jhaveri-Chandra,6,MH,3,2025-05-04T00:00:00,True
+125,Doshi-Kaur,11,TG,5,2025-04-20T00:00:00,True
+126,Rastogi-Suresh,11,UP,1,2024-12-07T00:00:00,True
+127,Mital Ltd,11,MP,7,2026-08-03T00:00:00,True
+128,"Biswas, Sule and Chada",2,WB,7,2025-01-26T00:00:00,True
+129,Kalla Ltd,5,KL,9,2026-02-06T00:00:00,True
+130,"Chanda, Contractor and Toor",7,KL,7,2024-11-09T00:00:00,True
+131,Mannan-Banik,10,HR,3,2025-05-12T00:00:00,True
+132,Balan-Choudhury,12,MP,5,2024-08-16T00:00:00,True
+133,Jha and Sons,8,MH,2,2024-10-20T00:00:00,True
+134,Kothari LLC,7,BR,5,2025-10-25T00:00:00,True
+135,Pillai-Sani,6,UP,3,2025-02-28T00:00:00,True
+136,Tailor Inc,9,TN,8,2026-03-13T00:00:00,True
+137,Venkataraman-Soman,3,WB,1,2025-02-13T00:00:00,True
+138,Pai-Bhardwaj,4,RJ,7,2025-11-04T00:00:00,True
+139,"Tandon, Setty and Palan",10,TN,3,2024-10-30T00:00:00,True
+140,"Dube, Parmar and Sharaf",7,TN,5,2024-10-14T00:00:00,True
+141,Kara Inc,10,GJ,8,2025-12-19T00:00:00,True
+142,Joshi-Dalal,2,MH,1,2025-05-09T00:00:00,True
+143,Bal-Hayre,1,DL,2,2025-03-14T00:00:00,True
+144,"Tank, Thakur and Bose",1,MP,10,2026-01-24T00:00:00,True
+145,Bhakta LLC,5,OD,8,2025-07-21T00:00:00,True
+146,"Sarraf, Balasubramanian and Guha",6,HR,6,2025-06-28T00:00:00,True
+147,"Raghavan, Jha and Bhasin",6,MP,7,2026-04-27T00:00:00,True
+148,Rastogi-Shenoy,6,PB,2,2024-08-13T00:00:00,True
+149,Arya LLC,12,MP,3,2024-09-05T00:00:00,True
+150,"Mand, Rau and Ranganathan",9,RJ,4,2025-08-22T00:00:00,True
+151,Korpal-Devan,11,OD,9,2025-10-07T00:00:00,True
+152,Kamdar Ltd,1,PB,1,2026-05-20T00:00:00,True
+153,Bhargava-Balakrishnan,1,PB,8,2025-04-06T00:00:00,True
+154,Chokshi-Nadkarni,7,KA,6,2025-10-22T00:00:00,True
+155,"Andra, Bala and Tandon",8,TN,7,2025-06-06T00:00:00,True
+156,Mahal Ltd,12,TG,9,2026-03-18T00:00:00,True
+157,Salvi and Sons,12,DL,3,2026-01-01T00:00:00,True
+158,Gopal and Sons,5,AS,3,2025-11-09T00:00:00,True
+159,Kale-Balasubramanian,8,GJ,4,2025-03-14T00:00:00,True
+160,Nazareth-Warrior,11,KA,2,2025-10-29T00:00:00,True
+161,Memon-Mangal,1,UP,6,2025-09-06T00:00:00,True
+162,"Vora, Hans and Garg",4,RJ,8,2026-06-27T00:00:00,True
+163,Sidhu LLC,3,OD,2,2026-07-19T00:00:00,True
+164,"Ahluwalia, Tailor and Grewal",4,KA,6,2025-08-31T00:00:00,True
+165,Vohra LLC,12,MP,9,2025-10-31T00:00:00,True
+166,"Dhaliwal, Prakash and Nazareth",4,RJ,2,2025-06-03T00:00:00,True
+167,"Mahal, Parekh and Mutti",2,PB,10,2025-02-18T00:00:00,True
+168,Kakar PLC,2,HR,3,2025-06-26T00:00:00,True
+169,Salvi Inc,10,MH,5,2024-10-12T00:00:00,True
+170,Mukhopadhyay PLC,4,MP,7,2025-07-03T00:00:00,True
+171,Keer Group,11,TG,9,2026-06-20T00:00:00,True
+172,Jhaveri-Suresh,4,TN,7,2024-08-19T00:00:00,True
+173,Randhawa PLC,8,PB,3,2025-06-09T00:00:00,True
+174,"Hans, Dhillon and Khosla",8,AS,3,2026-04-17T00:00:00,True
+175,"Badal, Bali and Kuruvilla",12,DL,10,2025-07-03T00:00:00,True
+176,"Keer, Sabharwal and Kumer",12,TN,5,2026-08-03T00:00:00,True
+177,Patla-Venkataraman,11,WB,8,2025-06-04T00:00:00,True
+178,Sachdev-Sama,7,DL,6,2025-01-13T00:00:00,True
+179,Varughese-Sankar,4,GJ,1,2025-02-09T00:00:00,True
+180,"Srinivasan, Lata and Chaudhari",12,MP,5,2026-06-16T00:00:00,True
+181,Kashyap-Swaminathan,3,MH,9,2025-09-15T00:00:00,True
+182,De Inc,11,OD,6,2025-09-14T00:00:00,True
+183,Kari-Cherian,9,KL,5,2026-07-24T00:00:00,True
+184,Natarajan-Pai,12,MP,2,2024-12-22T00:00:00,True
+185,Sathe Group,10,DL,5,2025-11-21T00:00:00,True
+186,Barad-Dara,10,TG,8,2026-07-23T00:00:00,True
+187,Parmar-Varghese,3,WB,4,2025-02-26T00:00:00,True
+188,Agrawal-Varghese,1,HR,10,2024-11-22T00:00:00,True
+189,Choudhry Ltd,3,MP,7,2026-07-06T00:00:00,True
+190,Kulkarni-Buch,1,TN,6,2025-12-08T00:00:00,True
+191,Sarna-Gokhale,1,TN,9,2026-06-06T00:00:00,True
+192,"Chowdhury, Muni and Kala",7,TG,7,2025-04-17T00:00:00,True
+193,"Raghavan, Biswas and Bora",4,MP,8,2025-06-15T00:00:00,True
+194,Yohannan-Raj,3,MP,2,2025-11-27T00:00:00,True
+195,Chaudry LLC,11,MP,5,2026-05-19T00:00:00,True
+196,Balasubramanian-Issac,6,MH,2,2024-12-07T00:00:00,True
+197,Borra-Chakraborty,8,GJ,1,2026-04-02T00:00:00,True
+198,"Ganesan, Ratta and Bains",10,OD,5,2026-07-21T00:00:00,True
+199,Om-Nori,10,UP,7,2025-12-18T00:00:00,True
+200,"Madan, Raghavan and Panchal",12,BR,5,2026-03-18T00:00:00,True
+201,Gill-Rao,6,KA,9,2025-02-15T00:00:00,True
+202,"Koshy, Raghavan and Toor",12,MH,7,2026-03-02T00:00:00,True
+203,Kata-Tata,9,OD,2,2026-01-23T00:00:00,True
+204,Chakraborty-Loke,9,TN,4,2026-06-15T00:00:00,True
+205,Issac LLC,3,UP,1,2026-03-01T00:00:00,True
+206,"Mahajan, Murty and Mand",6,TN,1,2024-12-19T00:00:00,True
+207,Pandya-Roy,11,UP,2,2026-03-08T00:00:00,True
+208,Balakrishnan-Andra,1,KA,2,2026-01-10T00:00:00,True
+209,Amble Inc,9,UP,7,2026-06-14T00:00:00,False
+210,Sachdev Ltd,5,DL,9,2025-06-06T00:00:00,True
+211,Doshi Group,8,TG,10,2025-12-25T00:00:00,True
+212,Kannan PLC,9,HR,10,2026-02-12T00:00:00,True
+213,Sinha-Loke,12,TN,1,2025-04-09T00:00:00,True
+214,"Dass, Chaudhary and Saxena",3,KL,4,2024-12-25T00:00:00,True
+215,"Johal, Ramakrishnan and Wali",4,HR,5,2024-12-19T00:00:00,True
+216,Warrior LLC,7,KA,9,2025-04-28T00:00:00,True
+217,"Bhakta, Nair and Seshadri",11,UP,7,2025-11-20T00:00:00,True
+218,Hari LLC,5,BR,3,2026-02-09T00:00:00,True
+219,Chada Group,11,RJ,4,2025-08-26T00:00:00,True
+220,"Patel, Bali and Comar",11,UP,7,2025-01-14T00:00:00,True
+221,Gulati Group,7,MP,1,2026-04-20T00:00:00,True
+222,"Lad, Bahl and Khosla",5,TN,9,2024-11-30T00:00:00,True
+223,Wable-Krishnamurthy,7,KA,6,2026-05-27T00:00:00,True
+224,"Magar, Gulati and Som",6,RJ,3,2025-03-29T00:00:00,True
+225,Bandi-Aurora,2,MP,4,2025-09-01T00:00:00,True
+226,"Salvi, Gera and Sur",2,UP,9,2025-06-19T00:00:00,True
+227,"Narayanan, Nayak and Dash",8,TN,9,2025-08-02T00:00:00,True
+228,Golla-Pant,5,RJ,10,2024-11-19T00:00:00,True
+229,Mane-Ram,3,PB,7,2025-02-11T00:00:00,True
+230,Narayan-Memon,12,MP,8,2026-04-08T00:00:00,True
+231,Chad Ltd,1,TG,3,2025-01-03T00:00:00,True
+232,"Soni, Pandya and Saran",12,RJ,1,2026-05-26T00:00:00,True
+233,Soman LLC,12,GJ,10,2025-10-12T00:00:00,True
+234,Tella Inc,3,AS,6,2025-12-02T00:00:00,True
+235,Choudhury Group,5,BR,9,2025-04-01T00:00:00,True
+236,"Bhavsar, Sekhon and Jayaraman",2,KL,7,2025-06-26T00:00:00,True
+237,Mohan-Shenoy,11,KA,2,2025-04-12T00:00:00,True
+238,"Mane, Nagar and Gour",3,DL,2,2025-05-29T00:00:00,True
+239,Munshi Ltd,8,MH,7,2026-07-04T00:00:00,True
+240,Rout Ltd,12,TG,8,2026-01-01T00:00:00,True
+241,Kari and Sons,11,TN,7,2024-08-24T00:00:00,True
+242,Mallick-Varkey,12,MH,7,2026-07-30T00:00:00,True
+243,"Sur, Chand and Batra",6,GJ,9,2026-07-11T00:00:00,True
+244,Chana Group,10,AS,3,2026-07-01T00:00:00,True
+245,Shroff PLC,9,GJ,3,2024-10-25T00:00:00,True
+246,Dass Ltd,3,HR,1,2025-10-16T00:00:00,True
+247,"Mander, Nazareth and Sen",3,HR,2,2025-07-22T00:00:00,True
+248,Borde-Khatri,4,TN,5,2025-06-12T00:00:00,True
+249,Madan PLC,5,WB,1,2026-05-18T00:00:00,True
+250,Manda-Chana,4,KL,9,2024-09-15T00:00:00,True
+251,"Mani, Ghose and Korpal",10,OD,1,2025-08-09T00:00:00,False
+252,Panchal-Doctor,8,PB,5,2025-08-07T00:00:00,True
+253,"Jaggi, Kala and Subramanian",6,UP,7,2025-08-08T00:00:00,False
+254,Warrior Group,7,OD,4,2024-11-04T00:00:00,True
+255,"Parmer, Ravi and Swamy",3,BR,2,2025-12-22T00:00:00,False
+256,"Dash, Joshi and Bava",11,RJ,4,2025-12-04T00:00:00,True
+257,Sachdeva LLC,5,HR,7,2025-02-12T00:00:00,True
+258,Mahal-Shan,5,TN,8,2026-06-13T00:00:00,True
+259,"Sodhi, Char and Butala",3,TG,6,2025-10-28T00:00:00,False
+260,Vasa-De,12,WB,2,2025-02-20T00:00:00,True
+261,"Bhattacharyya, Vohra and Sidhu",3,MP,7,2025-07-15T00:00:00,True
+262,Vig PLC,3,WB,8,2026-06-22T00:00:00,True
+263,Bora-Agate,2,BR,8,2026-02-24T00:00:00,True
+264,Dara-D’Alia,11,TG,6,2025-09-23T00:00:00,True
+265,Dar-Borra,12,MP,3,2024-11-30T00:00:00,True
+266,Rattan-Kurian,1,TG,3,2025-07-28T00:00:00,True
+267,Raj-Bumb,11,GJ,1,2026-07-05T00:00:00,True
+268,Thaman and Sons,7,MH,7,2025-12-14T00:00:00,True
+269,Shankar LLC,8,KA,7,2025-04-20T00:00:00,True
+270,Gera-Mittal,12,UP,4,2025-05-24T00:00:00,True
+271,Kala-Varty,5,GJ,7,2025-03-01T00:00:00,True
+272,"Nayar, Goyal and Khosla",2,UP,4,2026-04-07T00:00:00,True
+273,Subramanian-Master,3,GJ,2,2024-12-23T00:00:00,True
+274,"Tandon, Shanker and Agrawal",5,WB,3,2025-10-20T00:00:00,False
+275,Singh PLC,4,KA,1,2025-09-03T00:00:00,True
+276,"Dara, Din and Oak",5,GJ,4,2025-07-20T00:00:00,True
+277,Gera LLC,1,BR,1,2025-06-17T00:00:00,True
+278,Dugar Inc,6,RJ,6,2026-08-08T00:00:00,True
+279,"Balasubramanian, Gade and Gandhi",6,DL,3,2024-09-20T00:00:00,False
+280,Subramanian-Bhasin,11,PB,4,2025-05-29T00:00:00,True
+281,"Rege, Ravi and Sabharwal",10,TN,7,2025-02-15T00:00:00,True
+282,"Bahl, Divan and Sani",8,HR,6,2025-06-17T00:00:00,True
+283,Jani-Kale,11,MH,9,2024-12-21T00:00:00,True
+284,"Patel, Sharaf and Bhatnagar",12,HR,10,2026-02-02T00:00:00,True
+285,Mohanty-Rau,4,RJ,4,2026-03-31T00:00:00,True
+286,"Wagle, Deol and Chopra",2,TG,10,2024-12-11T00:00:00,True
+287,"Agarwal, Atwal and Gulati",11,WB,4,2026-08-01T00:00:00,True
+288,"Sodhi, Andra and Bail",2,KA,9,2026-05-05T00:00:00,True
+289,Batra-Korpal,12,OD,4,2026-02-07T00:00:00,True
+290,Venkatesh-Bhat,1,TG,4,2025-10-12T00:00:00,True
+291,"Vala, Saha and Saran",5,HR,6,2025-11-12T00:00:00,True
+292,"Kar, Gala and Bansal",2,BR,2,2025-12-17T00:00:00,True
+293,Banerjee-Varma,9,MH,3,2026-04-15T00:00:00,True
+294,Mahajan PLC,3,KL,1,2026-03-12T00:00:00,True
+295,Dubey-Saran,12,WB,7,2025-12-29T00:00:00,True
+296,Modi-Zachariah,9,KA,3,2025-11-01T00:00:00,True
+297,Rout-Goda,7,MP,7,2026-04-23T00:00:00,True
+298,"Rout, Palan and Bhargava",3,MH,3,2026-03-18T00:00:00,True
+299,Mangat-Luthra,12,MH,9,2025-11-19T00:00:00,True
+300,Rana-Nadig,12,RJ,5,2025-03-23T00:00:00,True

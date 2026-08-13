@@ -1,0 +1,47 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: querymind-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-querymind}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-querymind}
+      POSTGRES_DB: ${POSTGRES_DB:-querymind}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - querymind_pgdata:/var/lib/postgresql/data
+      # Runs once on first container start (empty data dir) to enable pgvector.
+      - ./data/seed/init_extensions.sql:/docker-entrypoint-initdb.d/00_extensions.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-querymind} -d ${POSTGRES_DB:-querymind}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  # Phase 5: the FastAPI backend, containerized (see ./Dockerfile). Talks to
+  # the `postgres` service above over the Docker network, using the same
+  # DATABASE_URL/READONLY_DATABASE_URL shape as local (non-Docker) dev --
+  # just with `postgres` as the host instead of `localhost`. Requires the
+  # DB to already be seeded and the read-only role already created (see
+  # README quickstart) before this will return anything but empty results.
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: querymind-backend
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-querymind}:${POSTGRES_PASSWORD:-querymind}@postgres:5432/${POSTGRES_DB:-querymind}
+      READONLY_DATABASE_URL: postgresql://querymind_readonly:querymind_readonly@postgres:5432/${POSTGRES_DB:-querymind}
+      PORT: 8000
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+volumes:
+  querymind_pgdata:

@@ -1,0 +1,35 @@
+# Frontend is deployed separately (Vercel) -- not part of the backend image.
+frontend/node_modules/
+frontend/.next/
+frontend/
+
+# Local env / secrets -- never bake these into an image.
+.env
+.env.*
+!.env.example
+
+# Data + eval artifacts that are large, regenerable, or contain no code.
+data/seed/generated/
+eval/logs/
+eval/reports/
+*.csv
+
+# VCS / editor / cache noise.
+.git/
+.github/
+.gitignore
+.vscode/
+.idea/
+**/__pycache__/
+**/*.pyc
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Docs (not needed at runtime; keeps rebuilds from invalidating on doc edits).
+PROGRESS.md
+README.md
+DEPLOYMENT.md
+docs/
+*.md

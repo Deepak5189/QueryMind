@@ -1,0 +1,28 @@
+TABLE: transactions
+ROW COUNT (at seed time): 50,000
+
+COLUMNS:
+  - transaction_id (bigint) [PRIMARY KEY, NOT NULL]
+  - user_id (integer) [NOT NULL]
+  - card_id (integer) [NULL]
+  - merchant_id (integer) [NOT NULL]
+  - state_code (character) [NOT NULL]
+  - amount (numeric) [NOT NULL]
+  - currency (character) [NOT NULL]
+  - transaction_type (character varying) [NOT NULL]
+  - status (character varying) [NOT NULL]
+  - transaction_ts (timestamp without time zone) [NOT NULL]
+
+FOREIGN KEYS (this table -> other tables):
+  - transactions.user_id -> users.user_id
+  - transactions.card_id -> cards.card_id
+  - transactions.merchant_id -> merchants.merchant_id
+  - transactions.state_code -> states.state_code
+
+REFERENCED BY (other tables -> this table):
+  - disputes.transaction_id -> transactions.transaction_id
+
+SAMPLE ROWS (3):
+  - transaction_id=7011, user_id=1185, card_id=None, merchant_id=242, state_code=RJ, amount=17131.56, currency=INR, transaction_type=NEFT, status=SUCCESS, transaction_ts=2025-01-18 07:26:48
+  - transaction_id=11580, user_id=1439, card_id=None, merchant_id=204, state_code=DL, amount=16401.63, currency=INR, transaction_type=UPI, status=SUCCESS, transaction_ts=2026-06-01 11:21:00
+  - transaction_id=13001, user_id=1730, card_id=None, merchant_id=109, state_code=BR, amount=1532.85, currency=INR, transaction_type=UPI, status=SUCCESS, transaction_ts=2025-01-24 19:21:55

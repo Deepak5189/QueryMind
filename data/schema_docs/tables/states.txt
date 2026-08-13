@@ -1,0 +1,17 @@
+TABLE: states
+ROW COUNT (at seed time): 16
+
+COLUMNS:
+  - state_code (character) [PRIMARY KEY, NOT NULL]
+  - state_name (character varying) [NOT NULL]
+  - region (character varying) [NOT NULL]
+
+REFERENCED BY (other tables -> this table):
+  - merchants.state_code -> states.state_code
+  - transactions.state_code -> states.state_code
+  - users.state_code -> states.state_code
+
+SAMPLE ROWS (3):
+  - state_code=AS, state_name=Assam, region=Northeast
+  - state_code=TN, state_name=Tamil Nadu, region=South
+  - state_code=DL, state_name=Delhi, region=North

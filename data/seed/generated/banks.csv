@@ -1,0 +1,11 @@
+bank_id,bank_name,bank_code,bank_type
+1,State Bank of India,SBIN,Public
+2,HDFC Bank,HDFC,Private
+3,ICICI Bank,ICIC,Private
+4,Axis Bank,UTIB,Private
+5,Punjab National Bank,PUNB,Public
+6,Kotak Mahindra Bank,KKBK,Private
+7,Bank of Baroda,BARB,Public
+8,IDFC First Bank,IDFB,Private
+9,Paytm Payments Bank,PYTM,Payments Bank
+10,Airtel Payments Bank,AIRP,Payments Bank
