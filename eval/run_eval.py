@@ -371,7 +371,8 @@ def _by_category(results: list[dict]) -> dict:
     for r in results:
         c = cats[r["category"]]
         c["n"] += 1
-        c["guardrail_correct"] += int(r["guardrail_correct"])
+        if r["guardrail_correct"] is not None:
+            c["guardrail_correct"] += int(r["guardrail_correct"])
         if r["result_correct"] is not None:
             c["result_scored"] += 1
             c["result_correct"] += int(r["result_correct"])
