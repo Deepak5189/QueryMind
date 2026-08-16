@@ -49,13 +49,13 @@ def build_graph():
         route_after_validate,
         {"execute": "execute_sql", "retry": "generate_sql", "fail": "handle_failure"},
     )
-    
+
     # graph.add_conditional_edges(
     #     "execute_sql",
     #     route_after_execute,
     #     {"summarize": "summarize", "fail": "handle_failure"},
     # )
-    
+
     graph.add_conditional_edges(
     "execute_sql",
     route_after_execute,
