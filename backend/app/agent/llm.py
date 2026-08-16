@@ -194,7 +194,7 @@ class OpenAILLM:
         from openai import OpenAI  # imported lazily, optional dep
 
         base_url = os.environ.get("OPENAI_BASE_URL") or os.environ.get("OPENAI_API_BASE")
-        self.client = OpenAI(api_key=os.environ["OPENAI_API_KEY"], base_url=base_url, timeout=60, max_retries=2) 
+        self.client = OpenAI(api_key=os.environ["OPENAI_API_KEY"], base_url=base_url, timeout=60, max_retries=2)
         self.model = model or os.environ.get("OPENAI_MODEL", "gpt-4o")
 
     def generate_sql(self, question, context, history, feedback=None) -> str:
