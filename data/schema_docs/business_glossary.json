@@ -30,9 +30,9 @@
     "related_tables": ["states"]
   },
   {
-    "term": "Merchant Category / MCC",
-    "definition": "The business category a merchant operates in (e.g. Groceries, Electronics, Travel & Transit), grouped further into 'Essential' vs 'Discretionary' spend via category_group. Analogous to a real-world Merchant Category Code (MCC).",
-    "related_tables": ["merchant_categories", "merchants"]
+    "term": "Merchant Category",
+    "definition": "The business category a merchant operates in (e.g. Groceries, Electronics, Travel & Transit). In this database, merchant categories are NOT stored as an MCC column. The relationship is merchants.category_id -> merchant_categories.category_id. category_name stores the category label and category_group stores Essential vs Discretionary.",
+    "related_tables": ["merchants", "merchant_categories"]
   },
   {
     "term": "Settlement Bank",

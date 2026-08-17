@@ -24,7 +24,7 @@ from backend.app.ingestion.embeddings import get_embedder
 MAX_RETRIES = 2
 # Overridable via env var so the Phase 4 eval harness can run a retrieval
 # tuning pass (e.g. TOP_K_CONTEXT=8) without editing code between runs.
-TOP_K_CONTEXT = int(os.environ.get("TOP_K_CONTEXT", "5"))
+TOP_K_CONTEXT = int(os.environ.get("TOP_K_CONTEXT", "8"))
 EXECUTION_TIMEOUT_MS = 5000
 MAX_DISPLAY_ROWS = 50
 
@@ -156,9 +156,10 @@ def route_after_validate(state: AgentState) -> str:
     pick the next node, it doesn't update state)."""
     if state.get("is_valid"):
         return "execute"
-    if state.get("retry_count", 0) >= MAX_RETRIES:
-        return "fail"
-    return "retry"
+    # if state.get("retry_count", 0) >= MAX_RETRIES:
+    #     return "fail"
+    # return "retry"
+    return "fail"
 
 
 # @traced_node("execute_sql")
